@@ -1,0 +1,147 @@
+/* ===============================
+   SIDEBAR BASE
+================================ */
+
+.sidebar {
+  width: 260px;
+  background-color: maroon;
+  padding: 18px 12px;
+  display: flex;
+  flex-direction: column;
+  transition: width 0.25s ease;
+  overflow: hidden;
+}
+
+.sidebar.collapsed {
+  width: 84px;
+}
+
+/* ===============================
+   HEADER / BRAND
+================================ */
+
+.sidebar-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 36px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.brand-icon {
+  color: white;
+  font-size: 26px;
+}
+
+.brand-text {
+  color: white;
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+/* ===============================
+   COLLAPSE BUTTON (ARROW)
+================================ */
+
+.collapse-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 6px;
+}
+
+.collapse-btn svg {
+  color: white;
+  font-size: 24px; /* ARROW SIZE */
+}
+
+/* ===============================
+   NAVIGATION
+================================ */
+
+.sidebar-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* ===== LINK BASE ===== */
+.sidebar-nav a {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+
+  padding: 14px 18px;
+  border-radius: 16px;
+
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+
+  color: white !important;
+}
+
+/* ICONS — NORMAL */
+.sidebar-nav a svg {
+  color: white !important;
+  font-size: 24px;       /* 🔥 BIG ICONS */
+  min-width: 24px;
+  min-height: 24px;
+}
+
+/* TEXT */
+.sidebar-nav a span {
+  color: white !important;
+  white-space: nowrap;
+}
+
+/* HOVER */
+.sidebar-nav a:hover {
+  background: rgba(255, 255, 255, 0.18);
+}
+
+/* ===== ACTIVE ===== */
+.sidebar-nav a.active {
+  background: white;
+}
+
+.sidebar-nav a.active span {
+  color: maroon !important;
+  font-weight: 600;
+}
+
+.sidebar-nav a.active svg {
+  color: maroon !important;
+}
+
+/* ===============================
+   COLLAPSED MODE (🔥 FIX HERE 🔥)
+================================ */
+
+.sidebar.collapsed .sidebar-nav a {
+  padding: 18px 0;             /* REMOVE SIDE SQUEEZE */
+  justify-content: center;
+}
+
+/* FORCE ICON SIZE IN COLLAPSED */
+.sidebar.collapsed .sidebar-nav a svg {
+  font-size: 28px !important;  /* 🔥 BIGGER THAN NORMAL */
+  min-width: 28px;
+  min-height: 28px;
+}
+
+/* REMOVE TEXT */
+.sidebar.collapsed .sidebar-nav span {
+  display: none;
+}
+
+/* ACTIVE IN COLLAPSED */
+.sidebar.collapsed .sidebar-nav a.active {
+  border-radius: 18px;
+}

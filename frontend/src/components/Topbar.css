@@ -1,0 +1,53 @@
+.topbar {
+  min-height: 90px;
+  background: var(--bg-topbar);
+  border-bottom: 1px solid var(--border-color);
+  display: flex;
+  align-items: center;
+  padding: 12px 24px;
+}
+
+.topbar-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.topbar h1 {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--text-main);
+  margin: 0;
+}
+
+.topbar p {
+  font-size: 13px;
+  color: var(--text-muted);
+  margin: 2px 0 8px;
+}
+
+/* Breadcrumb */
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+}
+
+.crumb {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--brand-maroon);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.current {
+  color: var(--text-main);
+}
+
+.sep {
+  margin: 0 8px;
+  color: var(--text-muted);
+}
+
+

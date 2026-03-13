@@ -1,0 +1,116 @@
+.vuln-page {
+  padding: 24px;
+}
+
+.subtitle {
+  color: #6b7280;
+  margin-bottom: 20px;
+}
+
+/* CARD */
+.vuln-card {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 18px;
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.08);
+  margin-bottom: 20px;
+}
+
+.card-title {
+  margin-bottom: 12px;
+  font-size: 16px;
+}
+
+/* SEARCH */
+.search-row {
+  display: flex;
+  gap: 12px;
+}
+
+.search-row input {
+  flex: 1;
+  padding: 12px;
+  border-radius: 12px;
+  border: 1px solid #d1d5db;
+}
+
+.search-btn {
+  background: maroon;
+  color: white;
+  border: none;
+  padding: 10px 22px;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+/* BUTTON CARD */
+.button-card {
+  display: flex;
+  gap: 14px;
+}
+
+.source-btn {
+  border: 1px solid maroon;
+  background: white;
+  color: maroon;
+  padding: 10px 20px;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.source-btn.active {
+  background: maroon;
+  color: white;
+}
+
+/* TABLE */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 12px;
+  border-bottom: 1px solid #e5e7eb;
+  text-align: left;
+  vertical-align: top;
+}
+
+.cve-id {
+  font-weight: 600;
+}
+
+.desc {
+  max-width: 420px;
+  font-size: 13px;
+  line-height: 1.4;
+}
+
+.empty {
+  text-align: center;
+  color: #6b7280;
+}
+
+.loading {
+  text-align: center;
+  color: #6b7280;
+}
+
+/* SEVERITY */
+.sev.low {
+  color: #16a34a;
+  font-weight: 600;
+}
+.sev.medium {
+  color: #d97706;
+  font-weight: 600;
+}
+.sev.high {
+  color: #ea580c;
+  font-weight: 600;
+}
+.sev.critical {
+  color: #dc2626;
+  font-weight: 600;
+}

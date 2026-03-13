@@ -1,0 +1,73 @@
+.tools-page {
+  padding: 24px;
+}
+
+.subtitle {
+  color: #6b7280;
+  margin-bottom: 20px;
+}
+
+/* CATEGORY BUTTON BAR */
+.category-bar {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 24px;
+}
+
+.category-btn {
+  background: white;
+  border: 1px solid maroon;
+  color: maroon;
+  padding: 8px 14px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 13px;
+  transition: all 0.2s ease;
+}
+
+.category-btn.active {
+  background: maroon;
+  color: white;
+}
+
+/* TOOLS GRID */
+.tools-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+/* TOOL CARD */
+.tool-card {
+  background: #ffffff;
+  padding: 18px;
+  border-radius: 16px;
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.tool-card h3 {
+  font-size: 16px;
+  margin-bottom: 6px;
+}
+
+.tool-card p {
+  font-size: 13px;
+  color: #374151;
+  margin-bottom: 14px;
+}
+
+.tool-card a {
+  color: maroon;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+/* LOADING */
+.tools-loading {
+  padding: 24px;
+  color: #6b7280;
+}

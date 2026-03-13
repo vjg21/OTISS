@@ -1,0 +1,36 @@
+/* ===============================
+   GLOBAL THEME (LIGHT ONLY)
+================================ */
+
+:root {
+  /* Backgrounds */
+  --bg-main: #f7f3ed;     /* soft cream */
+  --bg-card: #ffffff;
+  --bg-topbar: #ffffff;
+
+  /* Text */
+  --text-main: #111827;
+  --text-muted: #6b7280;
+
+  /* Borders & shadows */
+  --border-color: #e5e7eb;
+  --shadow-card: 0 8px 22px rgba(0, 0, 0, 0.08);
+
+  /* Brand (LOCKED) */
+  --brand-maroon: maroon;
+}
+
+/* ===============================
+   BASE
+================================ */
+
+body {
+  margin: 0;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  background: var(--bg-main);
+  color: var(--text-main);
+}
+
+* {
+  box-sizing: border-box;
+}

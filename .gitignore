@@ -1,0 +1,21 @@
+# Frontend
+node_modules/
+dist/
+
+# Backend
+__pycache__/
+*.pyc
+.env
+.venv/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Large Data Files
+*.csv
+
+**/node_modules
+node_modules
+backend/scripts/*.csv
+backend/scripts/*.json
